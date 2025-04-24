@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - DUBAI GAME</title>
+    <link rel="stylesheet" href="Contact.css">
+    <!-- SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>DUBAI</span> GAME</a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Mission.html">Mission</a></li>
+            <li><a href="A%20propos.html">À propos</a></li>
+            <li><a href="Contact.html">Réservation</a></li>
+        </ul>
+        <a href="Contact.html" class="btn-reservation">Réserver Maintenant</a>
+    </header>
+
+    <section id="home">
+        <h2>Réservation</h2>
+    </section>
+
+    
+
+    <div class="form-container">
+        <form id="reservation-form" action="confirmation.html" method="GET">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required placeholder="Votre adresse email">
+
+            <label for="heure">Heure :</label>
+            <input type="time" id="heure" name="heure" required>
+
+            <input type="submit" value="Réserver">
+        </form>
+    </div>
+
+    <footer>
+        <p> Réalisé par <span>DICKO Sidiné</span> | Tous droits réservés.</p>
+      
+                  
+    </footer>
+
+    <script>
+        document.getElementById("reservation-form").addEventListener("submit", function (event) {
+            const heure = document.getElementById("heure").value;
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+    
+            if (!name || !email) {
+                alert("❌ Veuillez remplir tous les champs.");
+                event.preventDefault(); // Empêche l'envoi du formulaire
+                return;
+            }
+    
+            if ((heure < "13:00" || heure > "18:00") && (heure < "18:30" || heure > "23:30")) {
+                alert("❌ Aucune salle n'est ouverte à cette heure.");
+                event.preventDefault(); // Empêche l'envoi du formulaire
+            }
+        });
+    </script>
+    
+
+</body>
+</html>
