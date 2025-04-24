@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
 
@@ -365,3 +366,372 @@ header .logo a span {
     position: relative;
     font-family: 'Courier New', monospace;
 }
+=======
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+
+/* Réinitialisation des styles par défaut du navigateur */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Suppression du soulignement des liens */
+a {
+    text-decoration: none;
+}
+
+/* Configuration de la taille des polices et du défilement fluide */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+
+/* Personnalisation de la barre de défilement */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+/* Couleur de fond du site */
+body {
+    background-color: #111;
+}
+
+/* Espacement entre les sections */
+section {
+    margin-top: 50px;
+}
+
+/* Style de l'en-tête (header) */
+header {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+
+/* Logo et couleur du texte */
+header .logo a {
+    font-size: 25px;
+    color: #dd4e43;
+}
+header .logo a span {
+    color: #3dda5f;
+}
+
+/* Style du menu de navigation */
+.menu {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Style du bouton de réservation */
+.btn-reservation {
+    color: #dd4e43;
+    font-size: 14px;
+    border: 2px solid  #fff;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.btn-reservation:hover {
+    background-color: #3dda5f;
+    color: #fff;
+}
+
+.GAME{
+    color:#3dda5f ; 
+    font-size: 14px;
+    border: 2px solid  #fff;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+   
+}
+.GAME:hover {
+    background-color: #dd4e43;
+    color: #fff;
+}
+
+/* Style de la section Accueil */
+#home {
+    background: linear-gradient(rgba(0,0,0,0.1),#333), url("images/images2.png");
+    background-position: center,no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/* Style des titres dans la section Accueil */
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+    color: transparent;
+    text-transform: uppercase;
+}
+#home h4 {
+    font-size: 50px;
+    color: #963636;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+
+
+
+/* Style de base du bouton */
+/* Bouton "DUBAI" amélioré */
+.btn-DUBAI {
+    display: inline-block;
+    padding: 15px 35px; /* Taille généreuse pour plus d'impact */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #3dda5f, #dd4e43); /* Dégradé dynamique */
+    border-radius: 50px;  /* Bord arrondi */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre pour profondeur */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Effet de survol */
+  .btn-DUBAI:hover {
+    transform: translateY(-5px); /* Soulever le bouton */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
+    background: linear-gradient(45deg, #dd4e43, #3dda5f); /* Inverser le dégradé au survol */
+    cursor: pointer;
+  }
+  
+  /* Effet de "glow" (halo lumineux) autour du bouton au survol */
+  .btn-DUBAI::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Activation du "glow" au survol */
+  .btn-DUBAI:hover::after {
+    opacity: 1;
+  }
+  
+  /* Animation du texte pour plus de dynamisme */
+  .btn-DUBAI span {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-DUBAI:hover span {
+    transform: scale(1.1); /* Légère augmentation du texte au survol */
+  }
+  
+  
+
+
+/* Style du titre des sections */
+.title {
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.title:hover {
+    color:  #3dda5f;; /* Couleur de survol du bouton */
+}
+
+
+
+/* Style du pied de page */
+/* Footer structuré en colonnes */
+/* Partie du haut du footer */
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 30px;
+    color: #fff;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    margin: 15px;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #3dda5f;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dd4e43;
+    padding-bottom: 5px;
+  }
+
+  .footer-section p {
+    list-style: none;
+    padding: 0;
+    color: #3dda5f;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #dd4e43;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    background-color: #111;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 1px solid #dd4e43;
+    color: #fff;
+  }
+  
+  .footer-bottom span {
+    color: #3dda5f;
+    font-weight: bold;
+  }
+
+  .footer-top {
+    color: #3dda5f;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .footer-icons img {
+    width: 40px;         /* Taille de base */
+    height: 40px;
+    margin-right: 10px;  /* Espace entre les icônes */
+    transition: transform 0.3s ease; /* Animation fluide */
+    cursor: pointer;     /* Curseur main au survol */
+  }
+  
+  .footer-icons img:hover {
+    transform: scale(1.2); /* Zoom x1.2 au survol */
+  }
+  .footer-section li span {
+    color: #dd4e43;
+   }
+   
+   .footer-section .dur {
+     color: #3dda5f;
+    }
+    
+    
+  
+
+  
+
+/* Mission Impossible style */
+.mission-impossible {
+    background-color: #111;
+    padding: 60px 30px;
+    max-width: 1100px;
+    margin: auto;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.2);
+}
+
+.briefing-box {
+    background-color: #1c1c1c;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.1);
+}
+
+.briefing-box::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255,0,0,0.1) 0%, transparent 70%);
+    animation: pulse 6s infinite ease-in-out;
+    z-index: 0;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.1; }
+    50% { transform: scale(1.2); opacity: 0.2; }
+}
+
+.briefing-box h3 {
+    font-size: 2.4rem;
+    color: #e53935;
+    margin-bottom: 15px;
+    z-index: 1;
+    position: relative;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+}
+
+.briefing-box p {
+    font-size: 1.6rem;
+    color: #eee;
+    line-height: 1.8;
+    z-index: 1;
+    position: relative;
+    font-family: 'Courier New', monospace;
+}
+>>>>>>> c255e497c2195a5a0acd339a6735084e41a13947
