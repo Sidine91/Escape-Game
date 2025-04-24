@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+
+/* Réinitialisation des styles par défaut du navigateur */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Suppression du soulignement des liens */
+a {
+    text-decoration: none;
+}
+
+/* Configuration de la taille des polices et du défilement fluide */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+
+/* Personnalisation de la barre de défilement */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+/* Couleur de fond du site */
+body {
+    background-color: #111;
+}
+
+/* Espacement entre les sections */
+section {
+    margin-top: 50px;
+}
+
+/* Style de l'en-tête (header) */
+header {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+
+/* Logo et couleur du texte */
+header .logo a {
+    font-size: 25px;
+    color: #dd4e43;
+}
+header .logo a span {
+    color: #3dda5f;
+}
+
+/* Style du menu de navigation */
+.menu {
+    display: flex;
+    align-items: center;
+    
+}
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Style du bouton de réservation */
+/* Style du bouton de réservation */
+.btn-reservation {
+    color: #dd4e43;
+    font-size: 14px;
+    border: 2px solid  #fff;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+.btn-reservation:hover {
+    background-color: #3dda5f;
+    color: #fff;
+}
+
+/* Style de la section Accueil */
+#home {
+    background: linear-gradient(rgba(0,0,0,0.1),#333), url("images/A propos.png");
+    background-position: center,no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+
+#home p {
+
+    font-size: 16px;
+    color: #3dda5f;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style du titre des sections */
+.title {
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.title:hover {
+    color:  #3dda5f;; /* Couleur de survol du bouton */
+}
+
+
+.flex-item p {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.6;
+    
+}
+
+
+.flex-item p :hover{
+    font-size: 1rem;
+    color: #3dda5f;
+    line-height: 1.6;
+}
+
+
+/* Style du pied de page */
+footer {
+    width: 100%;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+footer p {
+    color: #fff;
+}
+footer p span {
+    color:#dd4e43;
+}
+
+
+  
+  
+  

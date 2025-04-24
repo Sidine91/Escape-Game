@@ -1,0 +1,54 @@
+<!-- Confirmation.html (Page de confirmation corrigée) -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de Réservation</title>
+    <link rel="stylesheet" href="Confirmation.css">
+    <!-- SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <span>DUBAI</span> GAME</a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Mission.html">Mission</a></li>
+            <li><a href="A%20propos.html">A propos</a></li>
+            <li><a href="Contact.html">Réservation</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <h2 id="confirmation-message">Merci pour votre réservation !</h2>
+        <a href="index.html" class="btn-reservation">Retour à l'accueil</a>
+    </section>
+    
+    <footer>
+        <p>Réalisé par <span>DICKO Sidiné</span> | Tous droits réservés.</p>
+    </footer>
+
+    
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");
+        const heure = params.get("heure");
+        
+        if (name) {
+            document.getElementById("confirmation-message").textContent = `Merci ${name} pour votre réservation !`;
+        }
+        
+        if (heure) {
+            document.getElementById("confirmation-heure").textContent = `Heure de réservation : ${heure}`;
+        }
+    </script>
+  <script src="reservation.js" defer></script>
+
+    
+</body>
+</html>
